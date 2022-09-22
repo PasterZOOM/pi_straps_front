@@ -19,7 +19,10 @@
     "react-slideshow-image": "^4.0.5",
     "sass": "^1.54.9",
     "typescript": ">=4.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@types/overlayscrollbars": "^1.12.1",
+    "overlayscrollbars": "1.13.3",
+    "overlayscrollbars-react": "^0.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

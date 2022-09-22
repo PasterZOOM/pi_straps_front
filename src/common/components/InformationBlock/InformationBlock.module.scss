@@ -1,0 +1,37 @@
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 160px 34px 80px;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &:nth-child(even) {
+      padding: 160px 0 0;
+      flex-direction: row-reverse;
+    }
+
+    .textBlock {
+      max-width: 586px;
+
+      .title {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 34px;
+        line-height: 44px;
+        font-weight: 500;
+      }
+
+      .description {
+        margin: 0;
+        padding: 24px 0 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        color: #6d7885;
+      }
+    }
+
+  }
+}

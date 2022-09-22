@@ -6,6 +6,7 @@ import { PaletteTree } from './palette'
 
 import { App } from 'app/App'
 import { Header } from 'common/components/Header/Header'
+import { InformationBlock } from 'common/components/InformationBlock/InformationBlock'
 import { Top } from 'common/components/Top/Top'
 
 const ComponentPreviews = () => {
@@ -19,6 +20,9 @@ const ComponentPreviews = () => {
       </ComponentPreview>
       <ComponentPreview path="/Top">
         <Top />
+      </ComponentPreview>
+      <ComponentPreview path="/InformationBlock">
+        <InformationBlock />
       </ComponentPreview>
     </Previews>
   )

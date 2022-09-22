@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Header } from 'common/components/Header/Header'
+import { InformationBlock } from 'common/components/InformationBlock/InformationBlock'
 import { Top } from 'common/components/Top/Top'
 
 export const App = () => {
@@ -8,7 +9,7 @@ export const App = () => {
     <div>
       <Header />
       <Top />
-      hello
+      <InformationBlock />
     </div>
   )
 }

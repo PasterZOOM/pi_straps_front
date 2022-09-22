@@ -1,0 +1,8 @@
+@import "src/assets/styles/scss/mixins";
+@import "src/assets/styles/scss/variables";
+
+.main {
+  background: $lightBackground;
+  border-top: 2px solid #ebedf0;
+  border-bottom: 2px solid #ebedf0;
+}

@@ -1,8 +1,7 @@
 import React from 'react'
 
-import { HowToOrder } from 'common/components/ HowToOrder/HowToOrder'
+import { MainPage } from 'common/components/Body/MainPage/MainPage'
 import { Header } from 'common/components/Header/Header'
-import { InformationBlock } from 'common/components/InformationBlock/InformationBlock'
 import { Top } from 'common/components/Top/Top'
 
 export const App = () => {
@@ -10,8 +9,7 @@ export const App = () => {
     <div>
       <Header />
       <Top />
-      <InformationBlock />
-      <HowToOrder />
+      <MainPage />
     </div>
   )
 }

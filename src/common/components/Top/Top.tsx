@@ -6,6 +6,8 @@ import logo from '../../../assets/svg/logo.svg'
 import 'react-slideshow-image/dist/styles.css'
 import styles from './Top.module.scss'
 
+import { AppButton } from 'common/components/Buttons/AppButton/AppButton'
+
 type SlideItemType = {
   id: number
   text: string
@@ -31,9 +33,7 @@ export const Top = () => {
         <div className={styles.moreBlock}>
           <img src={logo} alt="logo" width="250px" className={styles.logo} />
           <span className={styles.text}>Кожевенная мастерская белорусского ремесленника</span>
-          <button type="button" className={styles.button}>
-            Подробнее
-          </button>
+          <AppButton title="Подробнее" />
         </div>
         <div className={styles.slide}>
           <Slide indicators>

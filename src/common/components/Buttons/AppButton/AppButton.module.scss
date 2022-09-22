@@ -1,0 +1,12 @@
+@import "src/assets/styles/scss/mixins";
+@import "src/assets/styles/scss/variables";
+
+
+.button {
+  @include text(16px, 500, none, none);
+  height: 44px;
+  width: 196px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}

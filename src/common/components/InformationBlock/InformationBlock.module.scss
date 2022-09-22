@@ -1,7 +1,11 @@
+@import "src/assets/styles/scss/mixins";
+@import "src/assets/styles/scss/variables";
+
+
 .main {
-  margin: 0 auto;
+  margin: 120px auto 0;
   max-width: 1200px;
-  padding: 160px 34px 80px;
+  padding: 40px 34px 0;
 
   .item {
     display: flex;
@@ -9,7 +13,7 @@
     gap: 30px;
 
     &:nth-child(even) {
-      padding: 160px 0 0;
+      margin: 160px 0 0;
       flex-direction: row-reverse;
     }
 
@@ -17,19 +21,14 @@
       max-width: 586px;
 
       .title {
+        @include titleText();
         margin: 0;
-        font-family: 'Roboto', sans-serif;
-        font-size: 34px;
-        line-height: 44px;
-        font-weight: 500;
       }
 
       .description {
+        @include descriptionText();
         margin: 0;
         padding: 24px 0 0;
-        font-family: 'Roboto', sans-serif;
-        font-size: 17px;
-        color: #6d7885;
       }
     }
 

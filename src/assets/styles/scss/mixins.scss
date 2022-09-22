@@ -1,0 +1,16 @@
+@import 'variables';
+
+@mixin text( $fountSize, $fontWeight,$lineHeight, $color) {
+  font-family: $textFamily;
+  font-size: $fountSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin titleText() {
+  @include text(34px, 500, 44px, $titleColor);
+}
+@mixin descriptionText() {
+  @include text(17px, 500, 26px, $textColor);
+}

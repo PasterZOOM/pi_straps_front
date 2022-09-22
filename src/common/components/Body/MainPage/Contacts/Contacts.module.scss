@@ -1,0 +1,45 @@
+@import "src/assets/styles/scss/mixins";
+@import "src/assets/styles/scss/variables";
+
+
+.main {
+  margin: 160px 0 0;
+  padding: 0 34px;
+
+  .title {
+    @include titleText();
+    margin: 0;
+  }
+
+  .contactsBlock {
+    padding: 40px 0 0;
+    display: flex;
+    gap: 56px;
+
+
+    .map {
+      width: 675px;
+      height: 350px;
+      border-radius: 10px !important;
+      box-shadow: 0 2px 4px #00000014;
+    }
+
+
+    .contacts {
+      .contact {
+        margin: 0 0 8px;
+
+        .a {
+          @include text(15px, 400, none, $blueText);
+          text-decoration: none;
+        }
+
+        .address {
+          @include text(15px, 400, none, $titleColor);
+        }
+      }
+
+    }
+  }
+
+}

@@ -5,9 +5,10 @@ import { ComponentPreview, Previews } from '@react-buddy/ide-toolbox'
 import { PaletteTree } from './palette'
 
 import { App } from 'app/App'
-import { HowToOrder } from 'common/components/ HowToOrder/HowToOrder'
+import { Contacts } from 'common/components/Body/MainPage/Contacts/Contacts'
+import { HowToOrder } from 'common/components/Body/MainPage/HowToOrder/HowToOrder'
+import { InformationBlock } from 'common/components/Body/MainPage/InformationBlock/InformationBlock'
 import { Header } from 'common/components/Header/Header'
-import { InformationBlock } from 'common/components/InformationBlock/InformationBlock'
 import { Top } from 'common/components/Top/Top'
 
 const ComponentPreviews = () => {
@@ -27,6 +28,9 @@ const ComponentPreviews = () => {
       </ComponentPreview>
       <ComponentPreview path="/HowToOrder">
         <HowToOrder />
+      </ComponentPreview>
+      <ComponentPreview path="/Contacts">
+        <Contacts />
       </ComponentPreview>
     </Previews>
   )

@@ -2,14 +2,18 @@ import React from 'react'
 
 import styles from './MainPage.module.scss'
 
-import { HowToOrder } from 'common/components/ HowToOrder/HowToOrder'
-import { InformationBlock } from 'common/components/InformationBlock/InformationBlock'
+import { Contacts } from 'common/components/Body/MainPage/Contacts/Contacts'
+import { HowToOrder } from 'common/components/Body/MainPage/HowToOrder/HowToOrder'
+import { InformationBlock } from 'common/components/Body/MainPage/InformationBlock/InformationBlock'
 
 export const MainPage = () => {
   return (
     <div className={styles.main}>
-      <InformationBlock />
-      <HowToOrder />
+      <div className={styles.content}>
+        <InformationBlock />
+        <HowToOrder />
+        <Contacts />
+      </div>
     </div>
   )
 }

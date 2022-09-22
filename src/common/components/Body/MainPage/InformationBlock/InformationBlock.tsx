@@ -1,9 +1,8 @@
 import { v1 } from 'uuid'
 
-import photo1 from '../../../assets/images/photo1.jpg'
-import photo2 from '../../../assets/images/photo2.jpg'
-
-import styles from './InformationBlock.module.scss'
+import photo1 from 'assets/images/photo1.jpg'
+import photo2 from 'assets/images/photo2.jpg'
+import styles from 'common/components/Body/MainPage/InformationBlock/InformationBlock.module.scss'
 
 type InformationBlockItemType = {
   id: string

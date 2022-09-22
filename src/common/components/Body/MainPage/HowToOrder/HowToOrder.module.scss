@@ -1,11 +1,10 @@
-@import "src/assets/styles/scss/mixins";
-@import "src/assets/styles/scss/variables";
+@import "../../../../../assets/styles/scss/mixins";
+@import "../../../../../assets/styles/scss/variables";
 
 .main {
   margin: 160px 0 0;
-  padding: 0 34px;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   align-items: center;
 
   .textBlock {
@@ -19,7 +18,8 @@
 
     .text {
       @include descriptionText();
-      margin: 24px 0 0;
+      padding: 24px 0 0;
+      margin: 0;
     }
   }
 

@@ -1,5 +1,4 @@
-import styles from './HowToOrder.module.scss'
-
+import styles from 'common/components/Body/MainPage/HowToOrder/HowToOrder.module.scss'
 import { AppButton } from 'common/components/Buttons/AppButton/AppButton'
 
 export const HowToOrder = () => {

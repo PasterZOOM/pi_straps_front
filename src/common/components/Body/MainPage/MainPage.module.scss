@@ -3,6 +3,13 @@
 
 .main {
   background: $lightBackground;
-  border-top: 2px solid #ebedf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 34px;
   border-bottom: 2px solid #ebedf0;
+
+  .content {
+    max-width: 1200px;
+  }
 }

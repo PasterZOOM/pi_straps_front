@@ -1,16 +1,14 @@
 @import "src/assets/styles/scss/mixins";
 @import "src/assets/styles/scss/variables";
 
-
 .main {
-  margin: 120px auto 0;
-  max-width: 1200px;
-  padding: 40px 34px 0;
+  padding: 40px 0 0;
 
   .item {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+
 
     &:nth-child(even) {
       margin: 160px 0 0;

@@ -8,6 +8,7 @@ import { App } from 'app/App'
 import { Contacts } from 'common/components/Body/MainPage/Contacts/Contacts'
 import { HowToOrder } from 'common/components/Body/MainPage/HowToOrder/HowToOrder'
 import { InformationBlock } from 'common/components/Body/MainPage/InformationBlock/InformationBlock'
+import { Footer } from 'common/components/Footer/Footer'
 import { Header } from 'common/components/Header/Header'
 import { Top } from 'common/components/Top/Top'
 
@@ -31,6 +32,9 @@ const ComponentPreviews = () => {
       </ComponentPreview>
       <ComponentPreview path="/Contacts">
         <Contacts />
+      </ComponentPreview>
+      <ComponentPreview path="/Footer">
+        <Footer />
       </ComponentPreview>
     </Previews>
   )

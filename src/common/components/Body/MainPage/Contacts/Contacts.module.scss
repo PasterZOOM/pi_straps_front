@@ -4,7 +4,6 @@
 
 .main {
   margin: 160px 0 0;
-  padding: 0 34px;
 
   .title {
     @include titleText();
@@ -20,8 +19,13 @@
     .map {
       width: 675px;
       height: 350px;
-      border-radius: 10px !important;
+      border-radius: 10px;
       box-shadow: 0 2px 4px #00000014;
+      z-index: 90000;
+
+      .mapPlacemark {
+        background-image: url('https://sun1.beltelecom-by-minsk.userapi.com/s/v1/ig2/dsMeWEeYMzPu-TNVUGl81XFsghiOT2H_VY3_VGO9pUQcXSN-SCyGCdjhNc13jDH42nb0r5uJx2JWpR4l20G_jpOM.jpg?size=400x400&amp;quality=96&amp;crop=71,71,2017,2017&amp;ava=1')
+      }
     }
 
 

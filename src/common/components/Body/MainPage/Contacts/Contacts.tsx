@@ -1,16 +1,26 @@
-import { YMaps, Map } from 'react-yandex-maps'
+import { Map, Placemark, YMaps } from 'react-yandex-maps'
 
 import styles from './Contacts.module.scss'
+
+const startMapX = 54.001765
+const startMapY = 27.263761
 
 export const Contacts = () => {
   return (
     <div className={styles.main}>
       <h2 className={styles.title}>Контакты</h2>
       <div className={styles.contactsBlock}>
-        <YMaps style={{ borderRadius: '10px' }}>
-          <Map defaultState={{ center: [0, 0], zoom: 9 }} className={styles.map} />
+        <YMaps>
+          <Map defaultState={{ center: [startMapX, startMapY], zoom: 14 }} className={styles.map}>
+            <Placemark
+              defaultGeometry={[startMapX, startMapY]}
+              properties={{
+                balloonContentBody: 'This is balloon loaded by the Yandex.Maps API module system',
+              }}
+            />
+            <Placemark geometry={[startMapX, startMapY]} options={{}} />
+          </Map>
         </YMaps>
-
         <div className={styles.contacts}>
           <div className={styles.contact}>
             <a href="tel:+375257390658" className={styles.a}>

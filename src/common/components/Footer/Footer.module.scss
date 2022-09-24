@@ -1,0 +1,22 @@
+@import "src/assets/styles/scss/mixins";
+@import "src/assets/styles/scss/variables";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 120px;
+
+  .img {
+    margin: 0 0 16px;
+  }
+
+  .title {
+    @include text(17px, 400, none, $footerTitle)
+  }
+
+  .a {
+    @include text(14px, 400, none, $footerLink);
+    text-decoration: none;
+  }
+}

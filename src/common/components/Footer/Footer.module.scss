@@ -12,11 +12,17 @@
   }
 
   .title {
-    @include text(17px, 400, none, $footerTitle)
+    @include text(17px, 400, none, $footerTitle);
+    padding: 10px 0 0;
   }
 
   .a {
     @include text(14px, 400, none, $footerLink);
+    padding: 10px 0 0;
     text-decoration: none;
+  }
+
+  .button {
+    padding: 40px 0 0;
   }
 }

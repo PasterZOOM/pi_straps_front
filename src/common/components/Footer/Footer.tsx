@@ -12,11 +12,13 @@ export const Footer = () => {
         height="100px"
         className={styles.img}
       />
-      <div className={styles.title}>PI_Straps | Изделия ручной работы из кожи</div>
+      <span className={styles.title}>PI_Straps | Изделия ручной работы из кожи</span>
       <a href="https://vk.com/pi_straps" className={styles.a}>
         На нас подписаны 160 человек
       </a>
-      <AppButton title="Подробнее" />
+      <div className={styles.button}>
+        <AppButton title="Подробнее" />
+      </div>
     </div>
   )
 }

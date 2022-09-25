@@ -12,4 +12,46 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  .start {
+    box-sizing: border-box;
+    display: flex;
+    width: 33%;
+    padding: 0 16px 0 0;
+
+    .img {
+      border-radius: 50%;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 0 0 10px;
+
+      .title {
+        @include text(14px, 500, none, none);
+      }
+
+      .a {
+        @include text(13px, 400, none, $lightTextColor);
+        text-decoration: none;
+        opacity: .72;
+      }
+    }
+
+  }
+
+  .center {
+    width: 34%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .end {
+    width: 33%;
+    box-sizing: border-box;
+    padding: 0 0 0 16px;
+    text-align: end;
+  }
 }

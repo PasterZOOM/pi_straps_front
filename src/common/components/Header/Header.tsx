@@ -43,7 +43,11 @@ export const Header = () => {
       <div className={styles.center}>
         <Navbar whiteHeader={whiteHeader} />
       </div>
-      <div className={styles.end}>+375 (25) 739-06-58</div>
+      <div className={styles.end}>
+        <a href="tel:+375257390658" className={styles.a}>
+          <span>+375 (25) 739-06-58</span>
+        </a>
+      </div>
     </div>
   )
 }

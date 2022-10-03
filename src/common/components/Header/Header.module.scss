@@ -54,12 +54,19 @@
     box-sizing: border-box;
     padding: 0 0 0 16px;
     text-align: end;
+    @include text(14px, 500, none, inherit);
+
+    .a {
+      text-decoration: none;
+      color: inherit
+    }
   }
 }
 
 .whiteHeader {
   background-color: $secondBgColor;
   color: $footerTitle;
+  box-shadow: 0 2px 10px #6D6D6D3F, inset 0 1px 0 #FFFFFF4C;
   transition: .1s linear;
 
   .start {

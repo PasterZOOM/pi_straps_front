@@ -1,0 +1,24 @@
+@import "src/assets/styles/scss/mixins";
+@import "src/assets/styles/scss/variables";
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  .link {
+    @include text(16px, 400, none, $lightTextColor);
+    padding: 0 10px;
+    text-decoration: none;
+    opacity: .64;
+    transition: .1s linear;
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  .whiteHeader {
+    color: $footerTitle;
+    transition: .1s linear;
+  }
+}

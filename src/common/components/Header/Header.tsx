@@ -4,6 +4,8 @@ import OverlayScrollbars from 'overlayscrollbars'
 
 import styles from './Header.module.scss'
 
+import { Navbar } from 'common/components/Navbar/Navbar'
+
 export const Header = () => {
   const [whiteHeader, setWhiteHeader] = useState(false)
   const scrollHandler = () => {
@@ -30,7 +32,9 @@ export const Header = () => {
           </a>
         </div>
       </div>
-      <div className={styles.center}>nav</div>
+      <div className={styles.center}>
+        <Navbar whiteHeader={whiteHeader} />
+      </div>
       <div className={styles.end}>+375 (25) 739-06-58</div>
     </div>
   )

@@ -22,7 +22,7 @@ export const Navbar: FC<PropsType> = ({ whiteHeader }) => {
 
   return (
     <nav className={styles.main}>
-      <NavLink to="/main" className={setAction}>
+      <NavLink to="/home" className={setAction}>
         Главная
       </NavLink>
       <NavLink to="/catalog" className={setAction}>

@@ -8,12 +8,12 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin: 160px 0 0;
 
-
-    &:nth-child(even) {
-      margin: 160px 0 0;
-      flex-direction: row-reverse;
-    }
+    //&:nth-child(even) {
+    //  margin: 160px 0 0;
+    //  flex-direction: row-reverse;
+    //}
 
     .textBlock {
       max-width: 586px;

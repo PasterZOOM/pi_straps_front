@@ -1,11 +1,13 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 
 import { HomePage } from 'common/components/Body/HomePage/HomePage'
-import { path } from 'common/enums'
+import { path } from 'common/enums/enums'
+import { Catalog } from 'features/Catalog/Catalog'
 
 export const RoutesPages = () => {
   const routes = [
     { path: path.HOME, component: <HomePage /> },
+    { path: path.CATALOG, component: <Catalog /> },
     {
       path: '*',
       component: (

@@ -12,6 +12,7 @@ export const HomePage = () => {
   return (
     <div>
       <Top />
+
       <div className={styles.main}>
         <div className={styles.content}>
           <InformationBlock />
@@ -19,6 +20,7 @@ export const HomePage = () => {
           <Contacts />
         </div>
       </div>
+
       <Footer />
     </div>
   )

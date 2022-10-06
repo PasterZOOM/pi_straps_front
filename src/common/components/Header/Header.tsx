@@ -1,27 +1,22 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import OverlayScrollbars from 'overlayscrollbars'
-import { useLocation } from 'react-router-dom'
 
 import styles from './Header.module.scss'
 
 import { Navbar } from 'common/components/Navbar/Navbar'
-import { scrollHelper } from 'common/utils/scrollHelper'
 
 export const Header = () => {
-  const { pathname } = useLocation()
   const [whiteHeader, setWhiteHeader] = useState(false)
 
   const onScrollCallBack = () => {
-    scrollHelper(instance, pathname, setWhiteHeader)
+    if (instance.scroll().position.y === 0) {
+      setWhiteHeader(false)
+    } else setWhiteHeader(true)
   }
   const instance = OverlayScrollbars(document.body, {
     callbacks: { onScroll: onScrollCallBack },
   })
-
-  useEffect(() => {
-    scrollHelper(instance, pathname, setWhiteHeader)
-  }, [instance, pathname])
 
   return (
     <div className={whiteHeader ? `${styles.main} ${styles.whiteHeader}` : styles.main}>

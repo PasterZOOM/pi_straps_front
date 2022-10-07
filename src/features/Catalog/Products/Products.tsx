@@ -1,3 +1,5 @@
+import { v1 } from 'uuid'
+
 import { Product } from './Product/Product'
 import styles from './Products.module.scss'
 
@@ -16,28 +18,106 @@ export type ProductType = {
 }
 const products: ProductType[] = [
   {
-    id: '1',
+    id: v1(),
     title: 'abc',
     model: 'ssdf',
     price: 1,
     photos: [
       {
-        id: '2',
+        id: v1(),
         isCover: true,
-        path: 'https://sun9-64.userapi.com/impg/y4P8OFqcB8qL7HJVHiZK7ZXa7tH_bDnYzD4VaA/sBuSN7W3EQQ.jpg?size=1280x960&quality=96&sign=0a6adfa99bce3ed888f75da9d0dad147&type=album',
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/YcJI38S4lUS5MQzdeg1Jmhj8g2yYTaQw4IR6oQ/em-ARYNg2JY.jpg?size=520x0&quality=90&sign=8258146eef5b5ceeb2ef9b2c1dc22725',
       },
     ],
   },
   {
-    id: '3',
+    id: v1(),
     title: '2sdc',
     model: 'ssdcsdf',
     price: 1,
     photos: [
       {
-        id: '4',
+        id: v1(),
         isCover: true,
-        path: 'https://sun9-64.userapi.com/impg/y4P8OFqcB8qL7HJVHiZK7ZXa7tH_bDnYzD4VaA/sBuSN7W3EQQ.jpg?size=1280x960&quality=96&sign=0a6adfa99bce3ed888f75da9d0dad147&type=album',
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/JVASvXHP8xV5PBdJemw7kys6lf4qIcp7z9ZMEA/IBDwwnwI_I4.jpg?size=520x0&quality=90&sign=5779437fe5be65007b62079f50ebe5de',
+      },
+    ],
+  },
+  {
+    id: v1(),
+    title: 'abc',
+    model: 'ssdf',
+    price: 1,
+    photos: [
+      {
+        id: v1(),
+        isCover: true,
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/YcJI38S4lUS5MQzdeg1Jmhj8g2yYTaQw4IR6oQ/em-ARYNg2JY.jpg?size=520x0&quality=90&sign=8258146eef5b5ceeb2ef9b2c1dc22725',
+      },
+    ],
+  },
+  {
+    id: v1(),
+    title: '2sdc',
+    model: 'ssdcsdf',
+    price: 1,
+    photos: [
+      {
+        id: v1(),
+        isCover: true,
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/JVASvXHP8xV5PBdJemw7kys6lf4qIcp7z9ZMEA/IBDwwnwI_I4.jpg?size=520x0&quality=90&sign=5779437fe5be65007b62079f50ebe5de',
+      },
+    ],
+  },
+  {
+    id: v1(),
+    title: 'abc',
+    model: 'ssdf',
+    price: 1,
+    photos: [
+      {
+        id: v1(),
+        isCover: true,
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/YcJI38S4lUS5MQzdeg1Jmhj8g2yYTaQw4IR6oQ/em-ARYNg2JY.jpg?size=520x0&quality=90&sign=8258146eef5b5ceeb2ef9b2c1dc22725',
+      },
+    ],
+  },
+  {
+    id: v1(),
+    title: '2sdc',
+    model: 'ssdcsdf',
+    price: 1,
+    photos: [
+      {
+        id: v1(),
+        isCover: true,
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/JVASvXHP8xV5PBdJemw7kys6lf4qIcp7z9ZMEA/IBDwwnwI_I4.jpg?size=520x0&quality=90&sign=5779437fe5be65007b62079f50ebe5de',
+      },
+    ],
+  },
+  {
+    id: v1(),
+    title: 'abc',
+    model: 'ssdf',
+    price: 1,
+    photos: [
+      {
+        id: v1(),
+        isCover: true,
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/YcJI38S4lUS5MQzdeg1Jmhj8g2yYTaQw4IR6oQ/em-ARYNg2JY.jpg?size=520x0&quality=90&sign=8258146eef5b5ceeb2ef9b2c1dc22725',
+      },
+    ],
+  },
+  {
+    id: v1(),
+    title: '2sdc',
+    model: 'ssdcsdf',
+    price: 1,
+    photos: [
+      {
+        id: v1(),
+        isCover: true,
+        path: 'https://sun1.beltelecom-by-minsk.userapi.com/impg/JVASvXHP8xV5PBdJemw7kys6lf4qIcp7z9ZMEA/IBDwwnwI_I4.jpg?size=520x0&quality=90&sign=5779437fe5be65007b62079f50ebe5de',
       },
     ],
   },

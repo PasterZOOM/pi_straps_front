@@ -17,7 +17,8 @@ export const Product: FC<PropsType> = ({ product }) => {
           backgroundImage: `url(${product.photos[0].path})`,
         }}
       />
-      <h1>{product.title}</h1>
+      <h3 className={styles.title}>{product.title}</h3>
+      <span className={styles.price}>$ {product.price}</span>
     </div>
   )
 }
